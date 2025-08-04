@@ -1,0 +1,803 @@
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J. website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar text-center text-md-start px-3">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <div>
+          <span class="topbar-welcome">WELCOME TO J.</span>
+          <a href="#" class="topbar-link"
+            >SIGN IN
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+              width="15"
+              alt="PK Flag"
+            />
+          </a>
+          <a href="#" class="topbar-link">TRACKING INFO</a>
+          <a href="#" class="topbar-link">CORPORATE INQUIRY</a>
+          <a href="#" class="topbar-link">CREATE AN ACCOUNT</a>
+          <select name="Currency" id="Currency">
+            <option value="PKR">PKR</option>
+            <option value="AUD">AUD</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+        <div>
+          <a href="#" class="topbar-icon-link"
+            ><i class="bi bi-search"></i> SEARCH</a
+          >
+          <a href="#" class="topbar-icon-link"><i class="bi bi-cart"></i></a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div>
+      <div class="container-fluid text-center">
+        <a href="http://127.0.0.1:5500/index.html#"
+          ><img
+            src="https://www.junaidjamshed.com/media/logo/stores/1/logo.png"
+            width="40"
+            alt="J. Logo"
+            class="img-fluid"
+        /></a>
+      </div>
+    </div>
+    <br />
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">NEW ARRIVALS</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">STITCHED</a></li>
+                <li><a class="dropdown-item" href="#">UNSTITCHED</a></li>
+                <li><a class="dropdown-item" href="#">KURTI</a></li>
+                <li><a class="dropdown-item" href="#">READY TO WEAR</a></li>
+                <li><a class="dropdown-item" href="#">KURTI</a></li>
+                <li><a class="dropdown-item" href="#">KURTA</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">BOTTOMWEAR COLLECTION</a>
+                </li>
+                <li><a class="dropdown-item" href="#">WAISTCOAT</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">SYNCC</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SYNC Clothing</a></li>
+                <li><a class="dropdown-item" href="#">SYNC Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">CAST & CREW</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">KAMEEZ SHALWAR</a></li>
+                <li><a class="dropdown-item" href="#">KURTA TROUSER</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">JACKET AND SWEATERS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">SHAWL</a></li>
+                <li><a class="dropdown-item" href="#">FOOT WEAR</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-danger fw-bold" href="#"
+                >FEATURED COLLECTION</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AUTOGRAPH SERIES</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >EID YOUR WAY - UNSTITCHED</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">FORMALS COLLECTIONS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">ESSENTIALS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BAHAREH - WOMAN UNSTITCHED</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >EXPRESSION SERIES - ALL AGES OF HIM</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">WOMEN</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">2 PIECE</a></li>
+                <li><a class="dropdown-item" href="#">3 PIECE</a></li>
+                <li><a class="dropdown-item" href="#">SAREE</a></li>
+                <li><a class="dropdown-item" href="#">BAGS</a></li>
+                <li><a class="dropdown-item" href="#">PRAYER MAT</a></li>
+                <li><a class="dropdown-item" href="#">JEWELLERY</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">MEN</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">KAMEEZ SHALWAR</a></li>
+                <li><a class="dropdown-item" href="#">KURTA</a></li>
+                <li><a class="dropdown-item" href="#">WAISTCOAT</a></li>
+                <li><a class="dropdown-item" href="#">FORMAL</a></li>
+                <li><a class="dropdown-item" href="#">SHERWANI</a></li>
+                <li><a class="dropdown-item" href="#">TURBAN</a></li>
+                <li><a class="dropdown-item" href="#">KHUSSA</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">BOYS & GIRLS</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">TROUSERS</a></li>
+                <li><a class="dropdown-item" href="#">KURTA</a></li>
+                <li><a class="dropdown-item" href="#">BOTTOM WEAR</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">FRAGRANCES</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">PERFUMES</a></li>
+                <li><a class="dropdown-item" href="#">MINIATURES</a></li>
+                <li><a class="dropdown-item" href="#">GIFT SET</a></li>
+                <li><a class="dropdown-item" href="#">ATTAR</a></li>
+                <li><a class="dropdown-item" href="#">BODY SPRAY</a></li>
+                <li><a class="dropdown-item" href="#">REED DIFFUSER</a></li>
+                <li><a class="dropdown-item" href="#">SCENTED CANDLE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">MAKEUP</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">CREAM & FOUNDATION</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CONCEALER & CONTOUR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">EYE LINER & MASCARA</a>
+                </li>
+                <li><a class="dropdown-item" href="#">EYE SHADOW</a></li>
+                <li><a class="dropdown-item" href="#">EYE PENCIL</a></li>
+                <li><a class="dropdown-item" href="#">LIP GLOSS</a></li>
+                <li><a class="dropdown-item" href="#">LIPSTICK</a></li>
+                <li><a class="dropdown-item" href="#">LIP PENCIL</a></li>
+                <li><a class="dropdown-item" href="#">LIP CARE</a></li>
+                <li><a class="dropdown-item" href="#">BLENDER & SPONGE</a></li>
+                <li><a class="dropdown-item" href="#">SHARPENER</a></li>
+                <li><a class="dropdown-item" href="#">MAKEUP REMOVER</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">SKINCARE</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FACE</a></li>
+                <li><a class="dropdown-item" href="#">HAIR</a></li>
+                <li><a class="dropdown-item" href="#">HANDS & FEET</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bd-example m-0 border-0">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              aria-label="Placeholder: First slide"
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              height="400"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="800"
+              src="images/Slide 1.png"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              aria-label="Placeholder: Second slide"
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              height="400"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="800"
+              src="images/Slide 2.png"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+
+    <div class="shop-section">
+      <div class="d-flex align-items-center mb-3">
+        <h2 class="mb-0 me-5" style="margin-right: 60px !important">
+          &nbsp; &nbsp; &nbsp; &nbsp; Shop For New Arrival
+        </h2>
+        <div style="width: 120px"></div>
+        <div class="buttons">
+          <a
+            href="https://www.junaidjamshed.com/new-arrivals/women-festive-ii-25.html"
+            class="category-link btn btn-outline-primary me-2"
+            >Women</a
+          >
+          <a
+            href="https://www.junaidjamshed.com/new-arrivals/men-festive-ii-25.html"
+            class="category-link btn btn-outline-primary me-2"
+            >Men</a
+          >
+          <a
+            href="https://www.junaidjamshed.com/new-arrivals/boys-girls-festive-ii-25.html"
+            class="category-link btn btn-outline-primary me-2"
+            >Boys &amp; Girls</a
+          >
+          <a
+            href="https://www.junaidjamshed.com/fragrances.html"
+            class="category-link btn btn-outline-primary"
+            >Fragrances</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="featured-collections">
+      <h2>Featured Collections</h2>
+      <div class="scroll-container">
+        <a
+          href="https://www.junaidjamshed.com/eid-your-way-unstitched"
+          class="collection-item"
+        >
+          <img src="images/Card 1.png" alt="Unstitched" />
+          <h3>Unstitched Collection</h3>
+          <p>
+            Step into the season of celebrations with J. Festive II. Timeless
+            tradition, reimagined for today. Your perfect festive look awaits.
+          </p>
+        </a>
+        <a
+          href="https://www.junaidjamshed.com/new-arrivals/men-festive-ii-25.html"
+          class="collection-item"
+        >
+          <img src="images/Card 2.png" alt="Men's festive" />
+          <h3>Men's Festive Collection</h3>
+          <p>
+            Own the festive season with J. Festive II. Classic kameez shalwar
+            styles crafted for the modern man.
+          </p>
+        </a>
+        <a
+          href="https://www.junaidjamshed.com/new-arrivals/women-festive-ii-25/stitched-collection.html"
+          class="collection-item"
+        >
+          <img src="images/Card 3.png" alt="Stitched" />
+          <h3>Stitched Collection</h3>
+          <p>
+            A celebration of elegance, colors, and timeless style. J.'s Festive
+            Collection II.
+          </p>
+        </a>
+        <a
+          href="https://www.junaidjamshed.com/womens/nearang-handwoven-collection.html"
+          class="collection-item"
+        >
+          <img src="images/Card 4.png" alt="Naerang" />
+          <h3>Naerang</h3>
+          <p>
+            Intricately crafted ensembles with fine detailing. Explore our
+            latest Naerang collection
+          </p>
+        </a>
+        <a
+          href="https://www.junaidjamshed.com/featured-collection/baharain-women-unstitched.html"
+          class="collection-item"
+        >
+          <img src="images/Card 5.png" alt="Bahareh" />
+          <h3>Bahareh</h3>
+          <p>Unstitched collection starting from PKR 2690</p>
+        </a>
+        <a
+          href="https://www.junaidjamshed.com/womens/semi-formal-stitched.html"
+          class="collection-item"
+        >
+          <img src="images/Card 6.png" alt="Formals" />
+          <h3>Formals</h3>
+          <p>
+            Elevate your elegance with J. Formal Collection – where tradition
+            meets timeless sophistication.
+          </p>
+        </a>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <h2 style="font-size: 30px; font-weight: bold; font-family: serif">
+        Watch And Buy!
+      </h2>
+    </div>
+    <section class="watch-buy">
+      <div class="scroll-container">
+        <a
+          href="https://www.junaidjamshed.com/cream-cotton-unstitched-kameez-shalwar-fabric-jjms3234jj9839h.html"
+        >
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>
+                  Soft fabric, perfect fit - a Kameez shalwar that feels as good
+                  as it looks
+                </p>
+              </div>
+            </div>
+          </div></a
+        >
+        <a
+          href="https://www.junaidjamshed.com/multicolor-lawn-embroidered-unstitched-3pc-jlu253403u.html?utm_source=whatmore-live&utm_campaign=video-shopping&utm_medium=product-page"
+        >
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>Off White Lawn Embroidered Unstitched 3pc</p>
+              </div>
+            </div>
+          </div></a
+        >
+        <a href="https://www.junaidjamshed.com/beautiful-shaniera-akram.html">
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>Where scent becomes your silent signature</p>
+              </div>
+            </div>
+          </div></a
+        >
+        <a
+          href="https://www.junaidjamshed.com/lilac-lawn-digital-printed-2pc-stitched-jgst255625s.html?utm_source=whatmore-live&utm_campaign=video-shopping&utm_medium=product-page"
+        >
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>Green Lawn Digital Printed 2pc Stitched</p>
+              </div>
+            </div>
+          </div></a
+        >
+        <a
+          href="https://www.junaidjamshed.com/green-blended-casual-kameez-shalwar-jjksa46719.html?utm_source=whatmore-live&utm_campaign=video-shopping&utm_medium=product-page"
+        >
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>Green Blended casual Kameez Shalwar</p>
+              </div>
+            </div>
+          </div></a
+        >
+        <a
+          href="https://www.junaidjamshed.com/white-basic-chappal-jlfwc-25-1284-fb-floral-chappal.html?utm_source=whatmore-live&utm_campaign=video-shopping&utm_medium=product-page"
+        >
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v6.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>White Basic Chappal</p>
+              </div>
+            </div>
+          </div></a
+        >
+        <a href="https://www.junaidjamshed.com/multicolor-ring-rn25019b.html">
+          <div class="video-card">
+            <video controls autoplay muted loop>
+              <source src="Videos/v7.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="product-info">
+                <p>Strong as gold, radiant as diamonds—just like you</p>
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
+    </section>
+    <div class="container">
+      <h2
+        class="section-heading"
+        style="font-size: x-large; font-family: Roboto"
+      >
+        Shop by Women Category
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/womens/un-stitched.html">
+              <img src="images/Card 2.1.png" alt="Stitched"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Stitched</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/womens/stitched.html">
+              <img src="images/Card 2.2.png" alt="Unstitched"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Un‑Stitched</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/womens/kurti.html">
+              <img src="images/Card 2.3.png" alt="Kurti"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Kurti</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/womens/women-trouser.html">
+              <img src="images/Card 2.4.png" alt="Formals"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Trousers</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2
+        class="section-heading"
+        style="font-size: x-large; font-family: Roboto"
+      >
+        Shop by Men Category
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/mens/kameez-shalwar.html">
+              <img src="images/Card 3.1.png" alt="Kameez Shalwar"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Kameez Shalwar</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/mens/kurta.html">
+              <img src="images/Card 3.2.png" alt="Kurta"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Kurta</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/mens/waist-coat.html">
+              <img src="images/Card 3.3.png" alt="Waist Coat"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Waist Coat</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a
+              href="https://www.junaidjamshed.com/mens/grooms-collection/sherwani-j.html"
+            >
+              <img src="images/Card 3.4.png" alt="Grooms Sherwani"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Grooms Sherwani</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2
+        class="section-heading"
+        style="font-size: x-large; font-family: Roboto"
+      >
+        Shop by Fragrances & Cosmetics
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/fragrances/for-men.html">
+              <img src="images/Card 4.1.png" alt="Men Fragrance"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Men Fragrance</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/fragrances/for-women.html">
+              <img src="images/Card 4.2.png" alt="Women Fragrance"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Women Fragrance</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/makeup">
+              <img src="images/Card 4.3.png" alt="Cosmetics"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Cosmetics</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/skin-care.html">
+              <img src="images/Card 4.4.png" alt="Skin Care"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Skin Care</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2
+        class="section-heading"
+        style="font-size: x-large; font-family: Roboto"
+      >
+        Shop by Boys & Girls Category
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/boys-girls/teen-girls.html">
+              <img src="images/Card 5.1.png" alt="Teen Girls"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Teen Girls</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/boys-girls/teen-boys.html">
+              <img src="images/Card 5.2.png" alt="Teen Boys"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Teen Boys</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/boys-girls/kids-girls.html">
+              <img src="images/Card 5.3.png" alt="Kid Girls"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Kid Girls</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <a href="https://www.junaidjamshed.com/boys-girls/kids-boys.html">
+              <img src="images/Card 5.4.png" alt="Kid Boys"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title heading-hover">Kid Boys</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2
+        class="section-heading"
+        style="font-size: xx-large; font-family: Roboto"
+      >
+        Explore J. Skin Care
+      </h2>
+      <a href="https://www.junaidjamshed.com/skin-care.html">
+        <video
+          width="100%"
+          height="auto"
+          autoplay
+          muted
+          loop
+          poster="Videos/J. Skin Care.mp4"
+          aria-controls="video"
+        >
+          <source src="Videos/J. Skin Care.mp4" type="video/mp4" />
+          Your browser does not support the video.
+        </video>
+      </a>
+    </div>
+    <div class="my-4"></div>
+    <section class="bg-white">
+      <div class="container bg-black text-white py-5">
+        <div class="text-center">
+          <h3 class="mb-3">BE THE FIRST</h3>
+          <p class="mb-4" style="font-family: Alata">
+            New arrivals. Exclusive previews. First access to<br />
+            sales. Sign up to stay in the know.
+          </p>
+          <form class="d-flex justify-content-center">
+            <input
+              type="email"
+              class="form-control me-2"
+              style="max-width: 220px"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="btn btn-light px-3">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="my-4"></div>
+    <footer class="pt-5 pb-4 bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Need Help?</h5>
+            <p class="mb-1">+92 21 111 112 111</p>
+            <p>(Mon–Sat: 9 am–10 pm | Sun: 11 am–8 pm)</p>
+            <p>
+              <a href="mailto:eshop@junaidjamshed.com" class="text-light">
+                <i class="bi bi-envelope me-1"></i> eshop@junaidjamshed.com
+              </a>
+            </p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6>Customer Service</h6>
+            <ul class="list-unstyled">
+              <li><a href="Contact.html" class="text-light">Contact Us</a></li>
+              <li><a href="#" class="text-light">Delivery & Orders</a></li>
+              <li><a href="#" class="text-light">Returns & Exchanges</a></li>
+              <li><a href="#" class="text-light">Terms & Conditions</a></li>
+              <li><a href="#" class="text-light">Privacy Policy</a></li>
+              <li><a href="#" class="text-light">Track My Order</a></li>
+              <li><a href="#" class="text-light">Payment Guide</a></li>
+              <li><a href="#" class="text-light">Fabric Glossary</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6>Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="About.html" class="text-light">About Us</a></li>
+              <li><a href="#" class="text-light">Careers</a></li>
+              <li><a href="#" class="text-light">Store Addresses</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>Follow Us</h6>
+            <div class="social-links">
+              <a href="#" class="text-light fs-4 me-3 facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3 instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3 twitter"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3 youtube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#" class="text-light fs-4 pinterest"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

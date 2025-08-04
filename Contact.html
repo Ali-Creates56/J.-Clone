@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+      }
+      h2,
+      h5 {
+        font-size: larger;
+        font-weight: 400;
+      }
+      .section-heading {
+        padding: 40px 20px 10px;
+        font-size: 1.2rem;
+      }
+      .contact-info {
+        background-color: #ffffff;
+        padding: 30px;
+      }
+      .contact-info h5 {
+        margin-top: 25px;
+      }
+      .contact-info p,
+      .contact-info a {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #000;
+      }
+      .contact-info a {
+        color: blue;
+        text-decoration: none;
+      }
+      .form-control,
+      textarea {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        margin-bottom: 25px;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        border-color: #000;
+      }
+      .submit-btn {
+        border: 1px solid #000;
+        background: transparent;
+        padding: 8px 25px;
+        font-weight: bold;
+      }
+      .submit-btn:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar text-center text-md-start px-3">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <div>
+          <span class="topbar-welcome">WELCOME TO J.</span>
+          <a href="#" class="topbar-link"
+            >SIGN IN
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+              width="15"
+              alt="PK Flag"
+            />
+          </a>
+          <a href="#" class="topbar-link">TRACKING INFO</a>
+          <a href="#" class="topbar-link">CORPORATE INQUIRY</a>
+          <a href="#" class="topbar-link">CREATE AN ACCOUNT</a>
+          <select name="Currency" id="Currency">
+            <option value="PKR">PKR</option>
+            <option value="AUD">AUD</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+        <div>
+          <a href="#" class="topbar-icon-link"
+            ><i class="bi bi-search"></i> SEARCH</a
+          >
+          <a href="#" class="topbar-icon-link"><i class="bi bi-cart"></i></a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div>
+      <div class="container-fluid text-center">
+        <a href="#"
+          ><img
+            src="https://www.junaidjamshed.com/media/logo/stores/1/logo.png"
+            width="40"
+            alt="J. Logo"
+            class="img-fluid"
+        /></a>
+      </div>
+    </div>
+    <br />
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">NEW ARRIVALS</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">STITCHED</a></li>
+                <li><a class="dropdown-item" href="#">UNSTITCHED</a></li>
+                <li><a class="dropdown-item" href="#">KURTI</a></li>
+                <li><a class="dropdown-item" href="#">READY TO WEAR</a></li>
+                <li><a class="dropdown-item" href="#">KURTI</a></li>
+                <li><a class="dropdown-item" href="#">KURTA</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">BOTTOMWEAR COLLECTION</a>
+                </li>
+                <li><a class="dropdown-item" href="#">WAISTCOAT</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">SYNCC</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SYNC Clothing</a></li>
+                <li><a class="dropdown-item" href="#">SYNC Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">CAST & CREW</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">KAMEEZ SHALWAR</a></li>
+                <li><a class="dropdown-item" href="#">KURTA TROUSER</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">JACKET AND SWEATERS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">SHAWL</a></li>
+                <li><a class="dropdown-item" href="#">FOOT WEAR</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-danger fw-bold" href="#"
+                >FEATURED COLLECTION</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AUTOGRAPH SERIES</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >EID YOUR WAY - UNSTITCHED</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">FORMALS COLLECTIONS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">ESSENTIALS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >BAHAREH - WOMAN UNSTITCHED</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >EXPRESSION SERIES - ALL AGES OF HIM</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">WOMEN</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">2 PIECE</a></li>
+                <li><a class="dropdown-item" href="#">3 PIECE</a></li>
+                <li><a class="dropdown-item" href="#">SAREE</a></li>
+                <li><a class="dropdown-item" href="#">BAGS</a></li>
+                <li><a class="dropdown-item" href="#">PRAYER MAT</a></li>
+                <li><a class="dropdown-item" href="#">JEWELLERY</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">MEN</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">KAMEEZ SHALWAR</a></li>
+                <li><a class="dropdown-item" href="#">KURTA</a></li>
+                <li><a class="dropdown-item" href="#">WAISTCOAT</a></li>
+                <li><a class="dropdown-item" href="#">FORMAL</a></li>
+                <li><a class="dropdown-item" href="#">SHERWANI</a></li>
+                <li><a class="dropdown-item" href="#">TURBAN</a></li>
+                <li><a class="dropdown-item" href="#">KHUSSA</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">BOYS & GIRLS</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">TROUSERS</a></li>
+                <li><a class="dropdown-item" href="#">KURTA</a></li>
+                <li><a class="dropdown-item" href="#">BOTTOM WEAR</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">FRAGRANCES</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">PERFUMES</a></li>
+                <li><a class="dropdown-item" href="#">MINIATURES</a></li>
+                <li><a class="dropdown-item" href="#">GIFT SET</a></li>
+                <li><a class="dropdown-item" href="#">ATTAR</a></li>
+                <li><a class="dropdown-item" href="#">BODY SPRAY</a></li>
+                <li><a class="dropdown-item" href="#">REED DIFFUSER</a></li>
+                <li><a class="dropdown-item" href="#">SCENTED CANDLE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">MAKEUP</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">CREAM & FOUNDATION</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CONCEALER & CONTOUR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">EYE LINER & MASCARA</a>
+                </li>
+                <li><a class="dropdown-item" href="#">EYE SHADOW</a></li>
+                <li><a class="dropdown-item" href="#">EYE PENCIL</a></li>
+                <li><a class="dropdown-item" href="#">LIP GLOSS</a></li>
+                <li><a class="dropdown-item" href="#">LIPSTICK</a></li>
+                <li><a class="dropdown-item" href="#">LIP PENCIL</a></li>
+                <li><a class="dropdown-item" href="#">LIP CARE</a></li>
+                <li><a class="dropdown-item" href="#">BLENDER & SPONGE</a></li>
+                <li><a class="dropdown-item" href="#">SHARPENER</a></li>
+                <li><a class="dropdown-item" href="#">MAKEUP REMOVER</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">SKINCARE</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FACE</a></li>
+                <li><a class="dropdown-item" href="#">HAIR</a></li>
+                <li><a class="dropdown-item" href="#">HANDS & FEET</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="section-heading">
+      <h2>CONTACT US</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 contact-info">
+          <strong>Let us know what you think.</strong>
+          <p>
+            Should you have any questions, comments, or inquiries please reach
+            out to us.
+          </p>
+          <h5>FOR ONLINE STORE</h5>
+          <br />
+          <h6>BY EMAIL</h6>
+          <a
+            href="mailto:eshop@junaidjamshed.com"
+            style="color: black; text-decoration: none"
+            >eshop@junaidjamshed.com</a
+          >
+          <h6>BY TELEPHONE</h6>
+          <p>
+            <a href="#">021 III 112 111</a> (9am – 10pm , Monday – Saturday,
+            Sunday 11am – 08pm)
+          </p>
+          <h6>BY MAIL</h6>
+          <p>
+            J. Junaid Jamshed Pvt Ltd<br />
+            Head office, 40 Sector 19, Korangi Industrial Area
+          </p>
+          <h5>FOR OUTLETS INQUIRIES</h5>
+          <br />
+          <h6>BY EMAIL</h6>
+          <p>feedback@junaidjamshed.com</p>
+          <h6>BY TELEPHONE</h6>
+          <p><a href="#">021 III 112 111</a> (9am – 6pm , Monday – Saturday)</p>
+          <h6>IN-STORE LOCATIONS & PHONE NUMBERS</h6>
+          <p>For complete store details, click <a href="#">here</a></p>
+          <h5>FOR CORPORATE ORDERS AND INQUIRIES</h5>
+          <h6>BY EMAIL</h6>
+          <p>corporate@junaidjamshed.com</p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-4">CONTACT US</h2>
+          <form>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone Number"
+              required
+            />
+            <textarea
+              class="form-control"
+              rows="5"
+              placeholder="What’s on your mind?"
+              required
+            ></textarea>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="my-4"></div>
+    <section class="bg-white">
+      <div class="container bg-black text-white py-5">
+        <div class="text-center">
+          <h3 class="mb-3">BE THE FIRST</h3>
+          <p class="mb-4" style="font-family: Alata">
+            New arrivals. Exclusive previews. First access to<br />
+            sales. Sign up to stay in the know.
+          </p>
+          <form class="d-flex justify-content-center">
+            <input
+              type="email"
+              class="form-control me-2"
+              style="max-width: 220px"
+              placeholder="Enter your email address"
+              required
+            />
+            <button
+              type="submit"
+              class="btn btn-light px-3"
+              style="height: 38px"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="my-4"></div>
+    <footer class="pt-5 pb-4 bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Need Help?</h5>
+            <p class="mb-1">+92 21 111 112 111</p>
+            <p>(Mon–Sat: 9 am–10 pm | Sun: 11 am–8 pm)</p>
+            <p>
+              <a href="mailto:eshop@junaidjamshed.com" class="text-light">
+                <i class="bi bi-envelope me-1"></i> eshop@junaidjamshed.com
+              </a>
+            </p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6>Customer Service</h6>
+            <ul class="list-unstyled">
+              <li><a href="Contact.html" class="text-light">Contact Us</a></li>
+              <li><a href="#" class="text-light">Delivery & Orders</a></li>
+              <li><a href="#" class="text-light">Returns & Exchanges</a></li>
+              <li><a href="#" class="text-light">Terms & Conditions</a></li>
+              <li><a href="#" class="text-light">Privacy Policy</a></li>
+              <li><a href="#" class="text-light">Track My Order</a></li>
+              <li><a href="#" class="text-light">Payment Guide</a></li>
+              <li><a href="#" class="text-light">Fabric Glossary</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6>Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="About.html" class="text-light">About Us</a></li>
+              <li><a href="#" class="text-light">Careers</a></li>
+              <li><a href="#" class="text-light">Store Addresses</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>Follow Us</h6>
+            <div class="social-links">
+              <a href="#" class="text-light fs-4 me-3 facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3 instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3 twitter"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3 youtube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#" class="text-light fs-4 pinterest"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
